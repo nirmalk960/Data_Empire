@@ -28,7 +28,7 @@ A test script inside a simple RPM package
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/opt/Data_Empire
-install Data_Empire.sh $RPM_BUILD_ROOT/opt/Data_Empire/Data_Empire.sh
+install Data_Empire.py $RPM_BUILD_ROOT/opt/Data_Empire/Data_Empire.py
 
 
 %clean
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %dir /opt/Data_Empire
 %defattr(-,root,root,-)
-/opt/Data_Empire/Data_Empire.sh
+/opt/Data_Empire/Data_Empire.py
 
 %post
 chmod 755 -R /opt/Data_Empire/
