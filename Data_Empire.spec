@@ -28,7 +28,7 @@ A test script inside a simple RPM package
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/opt/Data_Empire
-install mytest.sh $RPM_BUILD_ROOT/opt/Data_Empire/Data_Empire.sh
+install Data_Empire.sh $RPM_BUILD_ROOT/opt/Data_Empire/Data_Empire.sh
 
 
 %clean
